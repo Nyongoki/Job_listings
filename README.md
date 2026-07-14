@@ -33,6 +33,20 @@ npm install
 npm run dev
 ```
 
+### Error State Simulation
+
+To test the frontend error handling:
+1. Open [client/src/hooks/useJobs.js](file:///c:/Users/USER/Desktop/Alarms/Homeland/client/src/hooks/useJobs.js).
+2. Set the `SIMULATE_ERROR` constant to `true`:
+   ```javascript
+   // Set this to true to simulate database/API connection errors for testing purposes
+   const SIMULATE_ERROR = true;
+
+   export function useJobs() { ... }
+   ```
+3. Save the file and view the UI. After the 1.5s delay, the error state screen will render with a "Retry" button. Change it back to `false` to restore normal job listings.
+
+
 ---
 
 ## Part B: Node.js/Express Backend
